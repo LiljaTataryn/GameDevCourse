@@ -94,7 +94,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2
+      x: 63
       y: 822
       width: 53
       height: 90
@@ -462,7 +462,7 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -745, y: 392}
+    uvTransform: {x: -684, y: 392}
   - name: left hand
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -470,7 +470,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 65
+      x: 4
       y: 822
       width: 53
       height: 90
@@ -878,7 +878,7 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -133, y: 392}
+    uvTransform: {x: -194, y: 392}
   - name: left foot
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2544,20 +2544,13 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: right hand
-    spriteName: right hand
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 38cf6295931a84f45945feaa30743236
-    layerID: 57
-    mosaicPosition: {x: 4, y: 822}
   - name: left hand
     spriteName: left hand
     isGroup: 0
     parentIndex: -1
     spriteID: 3143d1c3085fca142b2241e8bca64c9c
     layerID: 35
-    mosaicPosition: {x: 65, y: 822}
+    mosaicPosition: {x: 4, y: 822}
   - name: left foot
     spriteName: left foot
     isGroup: 0
@@ -2565,13 +2558,6 @@ ScriptedImporter:
     spriteID: d958ae6038cad2f4fbbf48672991af4c
     layerID: 53
     mosaicPosition: {x: 4, y: 757}
-  - name: right foot
-    spriteName: right foot
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 0586255a9cf68d14ab45dbe3554c8c17
-    layerID: 51
-    mosaicPosition: {x: 114, y: 757}
   - name: head
     spriteName: head
     isGroup: 0
@@ -2586,6 +2572,20 @@ ScriptedImporter:
     spriteID: bdd23f8a0588dbc48b62fa6b405e44ab
     layerID: 47
     mosaicPosition: {x: 4, y: 4}
+  - name: right foot
+    spriteName: right foot
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0586255a9cf68d14ab45dbe3554c8c17
+    layerID: 51
+    mosaicPosition: {x: 114, y: 757}
+  - name: right hand
+    spriteName: right hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 38cf6295931a84f45945feaa30743236
+    layerID: 57
+    mosaicPosition: {x: 65, y: 822}
   characterData:
     bones:
     - name: bone_1
