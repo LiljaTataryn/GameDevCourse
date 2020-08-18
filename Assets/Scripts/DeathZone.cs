@@ -13,4 +13,6 @@ public class DeathZone : MonoBehaviour
         camera.followPlayer = false;
         player.GameOver();
     }
+
+    
 }
