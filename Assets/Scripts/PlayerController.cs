@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     public bool grounded;
 
+    public Transform effectPosition;
+
     public GameObject deathEffect;
 
 
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
     public void GameOver()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Instantiate(deathEffect, effectPosition.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }
