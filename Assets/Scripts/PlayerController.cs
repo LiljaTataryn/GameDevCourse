@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Animator anim;
-    public Rigidbody2D rb;
+    Animator anim;
+    Rigidbody2D rb;
 
     public int jumpForce;
 
@@ -13,18 +13,17 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask groundLayer;
 
-    public bool grounded;
+    bool grounded;
 
     public Transform effectPosition;
 
     public GameObject deathEffect;
 
-    public GameObject gameOver;
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
     //Update method used for physics in our game
     void FixedUpdate()
@@ -46,8 +45,9 @@ public class PlayerController : MonoBehaviour
 
     public void GameOver()
     {
+        GameManager.instance.cam.followPlayer = false;
         Instantiate(deathEffect, effectPosition.position, Quaternion.identity);
-        gameOver.SetActive(true);
+        GameManager.instance.gameOver.SetActive(true);
         Destroy(gameObject);
     }
 }
