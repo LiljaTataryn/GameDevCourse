@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject deathEffect;
 
+    public GameObject shield;
+    float shieldCD = 2f;
+    public bool shieldon = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,17 @@ public class PlayerController : MonoBehaviour
 
         anim.SetFloat("yVelocity", rb.velocity.y);
         anim.SetBool("Grounded", grounded);
+
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            shield.SetActive(true);
+            shieldon = true;
+        }
+        if(Input.GetKeyUp(KeyCode.S))
+        {
+            shield.SetActive(false);
+            shieldon = false;
+        }
     }
 
     public void GameOver()
