@@ -55,7 +55,7 @@ public class PlatformController : MonoBehaviour
 
             if(chances > 0)
             {
-                spawnedHazard = Instantiate(hazardPrefab, new Vector3(objectSpawnPositions[staticHazard].position.x, objectSpawnPositions[staticHazard].position.y - 0.28f, objectSpawnPositions[staticHazard].position.z), Quaternion.identity, transform);
+                spawnedHazard = Instantiate(hazardPrefab, new Vector3(objectSpawnPositions[staticHazard].position.x, objectSpawnPositions[staticHazard].position.y - +0.46f, objectSpawnPositions[staticHazard].position.z), Quaternion.identity, transform);
             }
         }
     }
